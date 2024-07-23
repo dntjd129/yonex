@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -31,7 +32,7 @@
 :root {
   --mainfont-notosans: "Noto Sans KR";
   font-family: var(--mainfont-notosans);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -39,12 +40,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-@media (max-width: 800px) {
-  :root {
-    font-size: 14px;
-    line-height: 1.4;
-  }
 }
 
 *,
@@ -121,11 +116,6 @@ strong {
   font-weight: normal;
 }
 
-img {
-  vertical-align: top;
-  width: 100%;
-}
-
 input,
 textarea,
 button,
@@ -138,34 +128,6 @@ select {
   border: 0;
 }
 
-#skip a {
-  position: absolute;
-  left: 10px;
-  top: -92px;
-  z-index: 100000;
-  font-size: 1rem;
-  padding: 10px 30px;
-  color: var(--white);
-  background: var(--black);
-}
-
-#skip a:focus,
-#skip a:active {
-  top: 10px;
-}
-
-.blind {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .ir {
   display: block;
   overflow: hidden;
@@ -173,6 +135,18 @@ select {
   line-height: 0;
   text-indent: -9999px;
   white-space: nowrap;
+}
+
+#page_container {
+  padding-top: 82px;
+  min-width: 1280px;
+  background-color: #fff;
+}
+#page_container .isTopBanner {
+  padding-top: 122px;
+}
+#page_container .isTopBanner #header {
+  padding-top: 40px;
 }
 
 #header {
@@ -186,9 +160,261 @@ select {
   background-color: #fff;
   margin-top: 0 !important;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.top_banner a {
+#header {
+  min-width: 1280px;
+}
+#header #header_sub {
+  float: left;
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  top: auto;
+  left: auto;
+}
+#header #header_sub #yonex_logo {
+  float: left;
+  padding: 18px 0;
+}
+#header #header_sub #yonex_logo a {
+  float: left;
+}
+#header #header_sub #top_1 {
+  float: left;
+  width: 100%;
+  padding: 0 0 0 50px;
+  position: relative;
+}
+#header #header_sub #top_1 .yonex_menu {
+  float: left;
+}
+#header #header_sub #top_1 .yonex_menu > li {
+  float: left;
+  padding: 0 35px 0 0;
+  position: relative;
+}
+#header #header_sub #top_1 .yonex_menu > li:last-child {
+  padding-right: 0;
+}
+#header #header_sub #top_1 .yonex_menu > li > a {
+  float: left;
+  font-size: 22px;
+  line-height: 80px;
+  position: relative;
+  font-family: "Noto Sans KR";
+  letter-spacing: 0;
+  font-weight: 500;
+}
+#header #header_sub #top_1 .yonex_menu > li > a span {
+  float: left;
+  font-size: 22px;
+  line-height: 80px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+#header #header_sub #top_1 .yonex_menu > li > a:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  float: left;
+  width: 5px;
+  height: 5px;
+  background-color: #0057b7;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+#header #header_sub #top_1 .yonex_menu > li > a:hover:before {
+  opacity: 0.7;
+  top: 20px;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  float: left;
+  background-color: #fff;
+  min-width: 725px;
+  text-align: center;
+  padding: 15px 0 12px;
+  background-color: #f5f7fb;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default {
+  box-shadow: none;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default:before {
+  content: "";
+  position: fixed;
+  top: 80px;
+  left: 0;
+  float: left;
+  width: 100%;
+  height: 50px;
+  background-color: #f5f7fb;
+  border-top: 2px solid #000;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default > .sub_menu_wrap {
+  position: relative;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default > .sub_menu_wrap > ul {
+  float: left;
+  width: 100%;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default > .sub_menu_wrap > ul > li {
+  float: left;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default > .sub_menu_wrap > ul > li:first-child:before {
+  display: none;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default > .sub_menu_wrap > ul > li:before {
+  content: "";
+  float: left;
+  width: 1px;
+  height: 11px;
+  margin: 6px 10px;
+  background-color: #000;
+  opacity: 0.5;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default > .sub_menu_wrap > ul > li > a {
+  float: left;
+  color: #000;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default > .sub_menu_wrap > ul > li > a:hover {
+  opacity: 0.4;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.default > .sub_menu_wrap > ul:hover > li:hover > a {
+  opacity: 1;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  padding: 0 264px;
+  text-align: left;
+  border-top: 2px solid #000;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl {
+  float: left;
+  padding: 15px 110px 20px 0;
+  transition: all 0.2s ease;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl.img_cate {
+  padding-right: 60px;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl:last-child {
+  padding-right: 0;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dt {
+  display: inline-block;
+  color: #0057b7;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 15px;
+  position: relative;
+  font-weight: 500;
+  font-family: "Roboto", "Noto Sans KR";
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dt:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  float: left;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  opacity: 0.5;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd {
+  display: block;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul {
+  display: inline-block;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul li {
+  display: block;
+  padding: 2px 0;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul li a {
+  display: inline-block;
+  color: #000;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  position: relative;
+  transition: all 0.2s ease;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul li a:hover {
+  color: #009739;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul li a:hover:before {
+  width: 100%;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  float: left;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul li.sub_menu_list > strong {
+  display: inline-block;
+  font-weight: 500;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul li.sub_menu_list > ul {
+  display: block;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul li.sub_menu_list > ul:last-child {
+  margin-bottom: 0;
+}
+#header #header_sub #top_1 .yonex_menu > li .sub_menu.extend > .sub_menu_wrap dl dd ul li.sub_menu_list > ul li {
+  display: block;
+  padding: 2px 0;
+}
+#header #header_sub #top_1 .yonex_menu > li:hover .sub_menu {
+  display: block;
+}
+#header #header_sub #top_1 .yonex_menu > li:hover > a span {
+  opacity: 1;
+}
+
+/* 최상단 띠배너 */
+#page_container.isTopBanner {
+  padding-top: 122px;
+}
+#page_container.isTopBanner #header {
+  padding-top: 40px;
+}
+#page_container.isTopBanner #header .top_banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: left;
+  width: 100%;
+}
+#page_container.isTopBanner #header .top_banner > a {
   float: left;
   width: 100%;
   height: 40px;
@@ -199,18 +425,6 @@ select {
   color: #fff;
   transition: all 0.15s ease;
 }
-.top_banner a:hover {
-  background-color: #4f4a47;
-}
-
-#header_sub {
-  float: left;
-  width: 100%;
-  height: auto;
-  display: flex;
-  background-color: transparent;
-  border: 0;
-  position: relative;
-  top: auto;
-  left: auto;
+#page_container.isTopBanner #header .top_banner > a:hover {
+  background-color: #4f4f4f;
 }/*# sourceMappingURL=style.css.map */

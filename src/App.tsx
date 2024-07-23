@@ -1,10 +1,10 @@
-import Header from "@components/header/Header";
+import Header from "./components/header/Header";
 
 function App() {
   return (
-    <div>
+    <section id="page_container" className="isTopBanner">
       <Header />
-    </div>
+    </section>
   );
 }
 

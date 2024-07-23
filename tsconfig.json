@@ -14,13 +14,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": "src",
-    "paths": {
-      "@components/*": ["components/*"],
-      "@pages/*": ["pages/*"],
-      "@assets/*": ["assets/*"]
-    }
+    "jsx": "react-jsx"
+    // "baseUrl": ".",
+    // "paths": {
+    //   "components/*": ["src/components/*"],
+    //   "pages/*": ["src/pages/*"],
+    //   "assets/*": ["src/assets/*"]
+    // }
   },
-  "include": ["src"]
+  "include": ["src", "font.d.ts"]
 }

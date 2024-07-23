@@ -1,3 +1,30 @@
+// #page_container {
+//   padding-top: 82px;
+// }
+
+// #page_container {
+//   min-width: 1280px;
+//   background-color: #fff;
+// }
+
+// #page_container .isTopBanner {
+//   padding-top: 122px;
+// }
+// 아래 코드 업글
+
+#page_container {
+  padding-top: 82px;
+  min-width: 1280px;
+  background-color: #fff;
+
+  .isTopBanner {
+    padding-top: 122px;
+    #header {
+      padding-top: 40px;
+    }
+  }
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -10,4 +37,9 @@
   background-color: #fff;
   margin-top: 0 !important;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }

@@ -1,1 +1,75 @@
-// mixin
+// // mixin
+// .text-gradient{
+// 	background:linear-gradient(to bottom, #0057b7 0%, #0057b7 20%, #009739 80%, #009739 100%);
+// 	-webkit-text-fill-color:transparent;
+// 	-webkit-background-clip:text;
+// }
+// /* IE 에서 텍스트 그라데이션 적용 안됨 */
+// @media screen and (-ms-high-contrast:active), (-ms-high-contrast:none){
+// 	.text-gradient{
+// 		background:transparent;
+// 		/* 그림자 효과로 대체 */
+// 		-webkit-text-shadow:1px 1px 3px rgba(0,0,0,0.35);
+// 		-moz-text-shadow:1px 1px 3px rgba(0,0,0,0.35);
+// 		-ms-text-shadow:1px 1px 3px rgba(0,0,0,0.35);
+// 		-o-text-shadow:1px 1px 3px rgba(0,0,0,0.35);
+// 		text-shadow:1px 1px 3px rgba(0,0,0,0.35);
+// 	}
+// }
+
+// .textShadow{
+// 	-webkit-text-shadow:2px 2px 3px rgba(0,0,0,0.40);
+// 	-moz-text-shadow:2px 2px 3px rgba(0,0,0,0.40);
+// 	-ms-text-shadow:2px 2px 3px rgba(0,0,0,0.40);
+// 	-o-text-shadow:2px 2px 3px rgba(0,0,0,0.40);
+// 	text-shadow:2px 2px 3px rgba(0,0,0,0.40);
+// }
+
+// .textOver{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+// .text-blue{color:#0057b7}
+// .text-red{color:#e54b4b !important}
+// .text-yellow{color:#fcea10 !important}
+// .text-green{color:#009739}
+
+// .textCenter{text-align:center}
+// .textLeft{text-align:left}
+
+// .fontMontserrat{font-family:'Montserrat','Roboto','Noto Sans KR' !important}
+// .fontOswald{font-family:'Oswald','Roboto','Noto Sans KR' !important}
+// /* 2023.01.27. NotoSans 폰트로 통일 */
+// .fontOswald{font-family:'Roboto','Noto Sans KR' !important}
+// .fontLato{font-family:'Lato','Roboto','Noto Sans KR' !important}
+
+// .m_dp_only{display:none}
+
+// .blank-img{opacity:0}
+
+// .borderBox{
+// 	-webkit-box-sizing:border-box;
+// 	-moz-box-sizing:border-box;
+// 	-ms-box-sizing:border-box;
+// 	-o-box-sizing:border-box;
+// 	box-sizing:border-box;
+// }
+
+// .boxShadow{
+// 	-webkit-box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+// 	-moz-box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+// 	-ms-box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+// 	-o-box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+// 	box-shadow:0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+// }
+// .boxShadow.type2{
+// 	-webkit-box-shadow:5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+// 	-moz-box-shadow:5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+// 	-ms-box-shadow:5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+// 	-o-box-shadow:5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+// 	box-shadow:5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+// }
+// .boxShadow.type3{
+// 	-webkit-box-shadow:3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+// 	-moz-box-shadow:3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+// 	-ms-box-shadow:3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+// 	-o-box-shadow:3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+// 	box-shadow:3px 3px 3px 0px rgba(0, 0, 0, 0.4);
