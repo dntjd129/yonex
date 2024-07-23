@@ -1,0 +1,19 @@
+// swiper
+.wrap {
+  padding-top: 20px;
+}
+
+.list {
+  .swiper {
+    .swiper-slide {
+      width: auto !important;
+      margin-right: 15px;
+    }
+  }
+}
+
+.card {
+  border: 2px solid black;
+  width: 450px;
+  height: 720px;
+}

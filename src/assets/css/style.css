@@ -427,4 +427,19 @@ select {
 }
 #page_container.isTopBanner #header .top_banner > a:hover {
   background-color: #4f4f4f;
+}
+
+.wrap {
+  padding-top: 20px;
+}
+
+.list .swiper .swiper-slide {
+  width: auto !important;
+  margin-right: 15px;
+}
+
+.card {
+  border: 2px solid black;
+  width: 450px;
+  height: 720px;
 }/*# sourceMappingURL=style.css.map */
