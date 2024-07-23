@@ -435,11 +435,10 @@ select {
 
 .list .swiper .swiper-slide {
   width: auto !important;
-  margin-right: 15px;
 }
 
 .card {
-  border: 2px solid black;
+  border: 1px solid black;
   width: 450px;
   height: 720px;
 }/*# sourceMappingURL=style.css.map */

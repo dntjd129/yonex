@@ -8,22 +8,23 @@ const SlideCard = () => {
     longSwipesRatio: 0,
     resistance: true,
     resistanceRatio: 0,
-    slidesPerView: "auto" as const,
+    slidesPerView: 5,
+    slidesPerGroup: 1,
+    spaceBetween: 20, // 슬라이드 간의 간격 (필요에 따라 조정)
   };
   return (
     <>
       <div className="wrap">
         <div className="list">
           <Swiper {...swiper_option}>
-            {[1, 4].map((_) => (
-              <SwiperSlide>
-                <div className="card"></div>
+            {Array.from({ length: 10 }).map((_, index) => (
+              <SwiperSlide key={index}>
+                <div className="card">Slide {index + 1}</div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
-      {/* min-width , 기본적으로 보이는 슬라이더 개수 정해야함 */}
     </>
   );
 };
