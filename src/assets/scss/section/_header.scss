@@ -43,7 +43,7 @@
             font-size: 22px;
             line-height: 80px;
             position: relative;
-            font-family: "Noto Sans KR";
+            font-family: "Roboto", "Noto Sans KR";
             letter-spacing: 0;
             font-weight: 500;
 
@@ -269,7 +269,7 @@
           }
 
           &:hover > a span {
-            opacity: 1;
+            // opacity: 1;
           }
         }
       }

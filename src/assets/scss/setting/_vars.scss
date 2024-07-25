@@ -1,8 +1,9 @@
 :root {
   --mainfont-notosans: "Noto Sans KR";
+  --mainfont-roboto: "Roboto";
 
   // 폰트 셋팅
-  font-family: var(--mainfont-notosans);
+  font-family: var(--mainfont-roboto), var(--mainfont-notosans);
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;

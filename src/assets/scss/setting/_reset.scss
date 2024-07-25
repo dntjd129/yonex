@@ -45,7 +45,7 @@ input,
 select,
 table,
 textarea {
-  font-family: var(--mainfont-notosans);
+  font-family: var(--mainfont-roboto), var(--mainfont-notosans);
 }
 
 // 링크 초기화
