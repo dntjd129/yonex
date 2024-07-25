@@ -1,58 +1,69 @@
 // main product banner
-.section_wrap {
-  display: block;
-  width: 1240px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
+.section {
+  width: 100%;
 
-  > .section_title {
-    float: left;
-    width: 100%;
-    margin: 100px 0 45px;
-    text-align: center;
+  .section_wrap {
+    display: block;
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
 
-    .title {
-      font-family: "Roboto";
-      font-size: 37px;
-      font-weight: 600;
-      line-height: 44px;
+    > .section_title {
+      float: left;
+      width: 100%;
+      margin: 100px 0 45px;
+      text-align: center;
+
+      .title {
+        font-family: "Roboto";
+        font-size: 37px;
+        font-weight: 600;
+        line-height: 44px;
+      }
+
+      .divider {
+        border: 2px solid #009739;
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+
+        &:after {
+          position: absolute;
+          top: -8px;
+          left: 0;
+          content: "";
+          width: 50px;
+          height: 1px;
+          background: #0057b7;
+        }
+
+        &:before {
+          position: absolute;
+          bottom: -8px;
+          right: 0;
+          content: "";
+          width: 50px;
+          height: 1px;
+          background: #0057b7;
+        }
+      }
+
+      > .title__sub {
+        margin-top: 15px;
+        font-size: 17px;
+        line-height: 25px;
+        color: #666;
+      }
     }
 
-    .divider {
-      border: 2px solid #009739;
-      position: relative;
+    > .banner-box {
       display: inline-block;
-      width: 30px;
-      margin-top: 25px;
-      margin-bottom: 10px;
-
-      &:after {
-        position: absolute;
-        top: -8px;
-        left: 0;
-        content: "";
-        width: 50px;
-        height: 1px;
-        background: #0057b7;
-      }
-
-      &:before {
-        position: absolute;
-        bottom: -8px;
-        right: 0;
-        content: "";
-        width: 50px;
-        height: 1px;
-        background: #0057b7;
-      }
-    }
-
-    > .title__sub {
-      margin-top: 15px;
-      font-size: 17px;
-      line-height: 25px;
-      color: #666;
+      width: 20%;
+      padding: 0 5px;
+      margin-bottom: 40px;
     }
   }
 }
