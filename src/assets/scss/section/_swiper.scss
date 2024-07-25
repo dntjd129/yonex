@@ -1,18 +1,20 @@
-// swiper
 .wrap {
-  max-width: 100%;
+  @media screen and (max-width: 767px) {
+    max-width: 412px;
+  }
   padding-top: 20px;
 
-  // MdPick swiper
   .md-list {
     height: 339px;
     max-width: 1020px;
     margin: 0;
     padding: 0 0 0 50px;
+
     .md-card {
       background-color: #ffffff;
       width: 230px;
       padding: 10px;
+
       .item-name {
       }
 
@@ -36,7 +38,6 @@
     }
   }
 
-  // main swiper
   .list {
     .card {
       border: 1px solid black;
@@ -45,18 +46,18 @@
       width: 450px;
       height: 720px;
     }
+
     @media screen and (max-width: 767px) {
       .card {
-        max-width: 412px;
-        height: 200px;
+        width: 100%;
+        height: 400px;
       }
     }
-  }
 
-  .swiper {
-    .swiper-slide {
-      width: auto !important;
-      // margin-right: 15px;
+    .swiper {
+      .swiper-slide {
+        width: auto !important;
+      }
     }
   }
 }

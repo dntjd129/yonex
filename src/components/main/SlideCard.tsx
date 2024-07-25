@@ -8,17 +8,29 @@ SwiperCore.use([Autoplay]);
 
 const SlideCard = () => {
   const swiper_option = {
-    loop: true, // 반복
+    loop: true,
     longSwipes: true,
     longSwipesRatio: 0,
     resistance: true,
     resistanceRatio: 0,
     slidesPerView: 5,
     slidesPerGroup: 1,
-    spaceBetween: 20, // 슬라이드 간의 간격
+    spaceBetween: 20,
+    centeredSlides: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      },
     },
   };
 
