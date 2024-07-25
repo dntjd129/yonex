@@ -2,21 +2,55 @@
 .wrap {
   max-width: 100%;
   padding-top: 20px;
-}
 
-.list {
+  // MdPick swiper
+  .md-list {
+    height: 339px;
+    max-width: 1020px;
+    margin: 0;
+    padding: 0 0 0 50px;
+    .md-card {
+      background-color: #ffffff;
+      width: 230px;
+      padding: 10px;
+      .item-name {
+      }
+
+      .price-info {
+      }
+
+      .item-price {
+        margin-bottom: 10px;
+      }
+
+      .item-color {
+        padding: 10px 0 20px;
+        border-top: 1px solid #d9d9d9;
+      }
+
+      .md-card-item {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // main swiper
+  .list {
+    .card {
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 20px;
+      width: 450px;
+      height: 720px;
+    }
+  }
+
   .swiper {
     .swiper-slide {
       width: auto !important;
       // margin-right: 15px;
     }
   }
-}
-
-.card {
-  border: 1px solid black;
-  padding: 20px;
-  border-radius: 20px;
-  width: 450px;
-  height: 720px;
 }

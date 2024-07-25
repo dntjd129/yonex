@@ -12,7 +12,7 @@ const ProductBanner = () => {
   const bannerText = ["BADMINTON", "BAG & ACC", "GOLF", "TENNIS", "WEARS"];
 
   return (
-    <div className="section">
+    <div className="section" style={{ paddingBottom: "50px" }}>
       <div className="section_wrap">
         <div className="section_title">
           <h2 className="title">

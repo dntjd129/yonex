@@ -3,10 +3,12 @@ import "swiper/css";
 import "../../assets/scss/style.scss";
 import SwiperCore from "swiper";
 import { Autoplay } from "swiper/modules";
+import md_1 from "../../assets/img/md_pick/md_pick_1.png";
+import md_1_hover from "../../assets/img/md_pick/md_pick_1_hover.png";
 
 SwiperCore.use([Autoplay]);
 
-const SlideCard = () => {
+const MdPickSlide = () => {
   const swiper_option = {
     loop: true, // 반복
     longSwipes: true,
@@ -24,11 +26,21 @@ const SlideCard = () => {
 
   return (
     <div className="wrap">
-      <div className="list">
+      <div className="md-list">
         <Swiper {...swiper_option}>
           {Array.from({ length: 10 }).map((_, index) => (
             <SwiperSlide key={index}>
-              <div className="card">Slide {index + 1}</div>
+              <div className="md-card">
+                <div className="md-card-item">
+                  <a href="#">
+                    <img src={md_1} alt="" />
+                  </a>
+                </div>
+                <div className="item-name">item-name</div>
+                <div className="price-info">권장 소비자가 대비</div>
+                <div className="item-price">item-price</div>
+                <div className="item-color">item-color</div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -37,4 +49,4 @@ const SlideCard = () => {
   );
 };
 
-export default SlideCard;
+export default MdPickSlide;

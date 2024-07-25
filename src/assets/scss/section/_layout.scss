@@ -11,6 +11,30 @@
 //   padding-top: 122px;
 // }
 // 아래 코드 업글
+body {
+  min-width: 1440px;
+  overflow-y: scroll;
+
+  @media screen and (max-width: 1023px) {
+    /* 타블렛 */
+    min-width: none;
+    max-width: 712px;
+  }
+
+  @media screen and (max-width: 767px) {
+    /* 모바일 */
+    // 모바일은 양 옆의 여백을 조금은 둬야함
+    min-width: none;
+    max-width: 412px;
+    padding: 0 14px;
+  }
+}
+
+.section {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
 
 #page_container {
   padding-top: 82px;
