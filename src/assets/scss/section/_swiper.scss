@@ -45,6 +45,12 @@
       width: 450px;
       height: 720px;
     }
+    @media screen and (max-width: 767px) {
+      .card {
+        max-width: 412px;
+        height: 200px;
+      }
+    }
   }
 
   .swiper {

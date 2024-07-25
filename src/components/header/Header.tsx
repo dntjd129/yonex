@@ -51,6 +51,10 @@ const Header = () => {
               </li>
             </ul>
           </div>
+          <div className="yonex_status_mobile">
+            <div className="yonex_search_mobile">search</div>
+            <div className="yonex_menu_mobile">menu</div>
+          </div>
         </div>
       </article>
     </>

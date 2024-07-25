@@ -1,5 +1,9 @@
+// header
 #header {
-  min-width: 1280px;
+  @media screen and (min-width: 768px) {
+    min-width: 1280px;
+  }
+
   #header_sub {
     float: left;
     width: 100%;
@@ -11,12 +15,27 @@
     top: auto;
     left: auto;
 
+    @media screen and (max-width: 767px) {
+      max-width: 412px;
+      margin: 0 auto;
+    }
+
     #yonex_logo {
       float: left;
       padding: 18px 0;
 
+      @media screen and (max-width: 767px) {
+        padding: 8px 0 4px 0;
+      }
+
       a {
         float: left;
+        @media screen and (max-width: 767px) {
+          img {
+            width: 60%;
+            place-items: center;
+          }
+        }
       }
     }
 
@@ -274,6 +293,18 @@
         }
       }
     }
+
+    .yonex.search_mobile .yonex.menu.mobile {
+      display: none;
+      @media screen and (max-width: 767px) {
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .sub_header {
+        display: none;
+      }
+    }
   }
 }
 
@@ -284,6 +315,10 @@
 
     #header {
       padding-top: 40px;
+
+      @media screen and (max-width: 767px) {
+        padding-top: 0px;
+      }
 
       .top_banner {
         position: absolute;
@@ -306,6 +341,12 @@
           &:hover {
             background-color: #4f4f4f;
           }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .top_banner {
+          display: none;
         }
       }
     }

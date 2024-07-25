@@ -1,31 +1,21 @@
-// #page_container {
-//   padding-top: 82px;
-// }
-
-// #page_container {
-//   min-width: 1280px;
-//   background-color: #fff;
-// }
-
-// #page_container .isTopBanner {
-//   padding-top: 122px;
-// }
-// 아래 코드 업글
+// layout
 body {
-  min-width: 1440px;
+  @media screen and (min-width: 768px) {
+    min-width: 1440px;
+  }
+  // min-width: 1440px;
   overflow-y: scroll;
 
-  @media screen and (max-width: 1023px) {
-    /* 타블렛 */
-    min-width: none;
-    max-width: 712px;
-  }
+  // @media screen and (max-width: 1023px) {
+  //   // 타블렛
+  //   min-width: auto;
+  //   max-width: 712px;
+  // }
 
   @media screen and (max-width: 767px) {
-    /* 모바일 */
     // 모바일은 양 옆의 여백을 조금은 둬야함
-    min-width: none;
-    max-width: 412px;
+    // min-width: auto;
+    // max-width: 412px;
     padding: 0 14px;
   }
 }
@@ -38,11 +28,20 @@ body {
 
 #page_container {
   padding-top: 82px;
-  min-width: 1280px;
+  // min-width: 1280px;
   background-color: #fff;
+  @media screen and (max-width: 767px) {
+    max-width: 412px;
+    margin: 0 auto;
+  }
 
-  .isTopBanner {
+  &.isTopBanner {
     padding-top: 122px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 40px;
+    }
+
     #header {
       padding-top: 40px;
     }
@@ -56,7 +55,6 @@ body {
   z-index: 7777;
   float: left;
   width: 100%;
-  //   min-width: 1280px;
   padding: 0 50px;
   background-color: #fff;
   margin-top: 0 !important;
@@ -66,4 +64,9 @@ body {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 8px;
+    margin: 0 auto;
+  }
 }
