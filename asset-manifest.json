@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2af9de84.css",
+    "main.js": "/static/js/main.997f4413.js",
+    "static/media/NotoSansKR-Regular.woff": "/static/media/NotoSansKR-Regular.957d49ad23632e4a9349.woff",
+    "static/media/NotoSansKR-Medium.woff": "/static/media/NotoSansKR-Medium.865a70c3c4af55e98eb5.woff",
+    "static/media/NotoSansKR-Black.woff": "/static/media/NotoSansKR-Black.dc4ea50f3189301a20dc.woff",
+    "static/media/NotoSansKR-Light.woff": "/static/media/NotoSansKR-Light.45736342560b8c933202.woff",
+    "static/media/NotoSansKR-Regular.woff2": "/static/media/NotoSansKR-Regular.e95adf0e9aeddac43f42.woff2",
+    "static/media/NotoSansKR-Bold.woff2": "/static/media/NotoSansKR-Bold.a4ecc3f7a43f7d43ce24.woff2",
+    "static/media/NotoSansKR-Medium.woff2": "/static/media/NotoSansKR-Medium.e5d0c16f11ebac0c56d2.woff2",
+    "static/media/NotoSansKR-Light.woff2": "/static/media/NotoSansKR-Light.e2557c2be18ddd169ee9.woff2",
+    "static/media/md_pick_1.png": "/static/media/md_pick_1.8b3b41bf79efdca677bf.png",
+    "static/media/Roboto-Medium.woff": "/static/media/Roboto-Medium.e2d3fd034896d1bc0fc5.woff",
+    "static/media/Roboto-Bold.woff": "/static/media/Roboto-Bold.9f4933e9b9559f8615f3.woff",
+    "static/media/Roboto-Light.woff": "/static/media/Roboto-Light.dd9e8e47c13bd958253a.woff",
+    "static/media/Roboto-Regular.woff": "/static/media/Roboto-Regular.5e1aec00d3a032511dde.woff",
+    "static/media/icon_korea_team.jpg": "/static/media/icon_korea_team.51e1e1733891e8709b7d.jpg",
+    "static/media/Roboto-Medium.woff2": "/static/media/Roboto-Medium.c90d94fb3f94e426c31e.woff2",
+    "static/media/Roboto-Bold.woff2": "/static/media/Roboto-Bold.8b6957a1ce4f6e9236f9.woff2",
+    "static/media/Roboto-Light.woff2": "/static/media/Roboto-Light.7d1febe76014e661e3f2.woff2",
+    "static/media/Roboto-Regular.woff2": "/static/media/Roboto-Regular.e9a9d280f48fac104245.woff2",
+    "static/media/logo.jpg": "/static/media/logo.41d6e744f3022896883d.jpg",
+    "static/media/NotoSansKR-Black.woff2": "/static/media/NotoSansKR-Black.06c1ba8b29d57e9a712e.woff2",
+    "static/media/NotoSansKR-Bold.woff": "/static/media/NotoSansKR-Bold.528bbe65e881375f8976.woff",
+    "index.html": "/index.html",
+    "main.2af9de84.css.map": "/static/css/main.2af9de84.css.map",
+    "main.997f4413.js.map": "/static/js/main.997f4413.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2af9de84.css",
+    "static/js/main.997f4413.js"
+  ]
+}
