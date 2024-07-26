@@ -36,7 +36,7 @@ const MdPickSlide = () => {
                     <img src={md_1} alt="" />
                   </a>
                 </div>
-                <div className="item-name">item-nameq</div>
+                <div className="item-name">item-name</div>
                 <div className="price-info">권장 소비자가 대비</div>
                 <div className="item-price">item-price</div>
                 <div className="item-color">item-color</div>

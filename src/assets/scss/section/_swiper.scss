@@ -1,17 +1,26 @@
 .wrap {
+  width: 100%;
   padding-top: 20px;
 
   // md-pick swiper
   .md-list {
     height: 339px;
     max-width: 1020px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 0 0 50px;
+    @media screen and (max-width: 767px) {
+      height: auto;
+      width: auto;
+      padding: 0 30px;
+    }
 
     .md-card {
       background-color: #ffffff;
       width: 300px;
       padding: 10px;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
 
       .item-name {
       }
@@ -32,18 +41,6 @@
         img {
           width: 100%;
         }
-      }
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    max-width: 412px;
-
-    .md-iist {
-      width: 100%;
-      padding: 0;
-      .md-card {
-        width: 100%;
       }
     }
   }
