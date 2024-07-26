@@ -15,9 +15,9 @@ const MdPickSlide = () => {
     longSwipesRatio: 0,
     resistance: true,
     resistanceRatio: 0,
-    slidesPerView: 5,
+    slidesPerView: 1,
     slidesPerGroup: 1,
-    spaceBetween: 20, // 슬라이드 간의 간격
+    spaceBetween: 0, // 슬라이드 간의 간격
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
@@ -36,7 +36,7 @@ const MdPickSlide = () => {
                     <img src={md_1} alt="" />
                   </a>
                 </div>
-                <div className="item-name">item-name</div>
+                <div className="item-name">item-nameq</div>
                 <div className="price-info">권장 소비자가 대비</div>
                 <div className="item-price">item-price</div>
                 <div className="item-color">item-color</div>

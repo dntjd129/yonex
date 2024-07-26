@@ -1,27 +1,48 @@
 // MD's Pick
 
-.md_pick {
-  background-color: #f5f7fb;
-  padding-bottom: 50px;
-}
-
-.horizontal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 0;
-}
-
-.section-title {
-  .title {
-    float: left;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.section {
+  &.md_pick {
+    background-color: #f5f7fb;
+    padding-bottom: 50px;
   }
-  span {
-    font-size: 30px;
-    font-weight: 600;
+
+  &.horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .section-title {
+    .title {
+      float: left;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    span {
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &.md_pick {
+      padding-bottom: 20px;
+    }
+
+    &.horizontal {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+
+    .section-title {
+      .title {
+      }
+      span {
+        font-size: 20px;
+      }
+    }
   }
 }

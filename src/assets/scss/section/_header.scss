@@ -4,6 +4,11 @@
     min-width: 1280px;
   }
 
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+  }
+
   #header_sub {
     float: left;
     width: 100%;
@@ -13,11 +18,12 @@
     border: 0;
     position: relative;
     top: auto;
-    left: auto;
 
     @media screen and (max-width: 767px) {
+      padding: 0 4px;
       max-width: 412px;
       margin: 0 auto;
+      justify-content: space-between;
     }
 
     #yonex_logo {
@@ -311,7 +317,9 @@
 /* 최상단 띠배너 */
 #page_container {
   &.isTopBanner {
-    padding-top: 122px;
+    @media screen and (min-width: 768px) {
+      padding-top: 122px;
+    }
 
     #header {
       padding-top: 40px;

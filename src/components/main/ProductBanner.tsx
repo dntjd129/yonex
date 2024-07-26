@@ -8,11 +8,12 @@ import wears from "../../assets/img/banner_box/banner_wears.png";
 import korea_team from "../../assets/img/banner_box/icon_korea_team.jpg";
 
 const ProductBanner = () => {
-  const bannerImg = [badminton, bag_acc, golf, tennis, wears];
-  const bannerText = ["BADMINTON", "BAG & ACC", "GOLF", "TENNIS", "WEARS"];
+  const bannerImg = [badminton, tennis, golf, wears, bag_acc];
+
+  const bannerText = ["BADMINTON", "TENNIS", "GOLF", "TENNIS", "WEARS"];
 
   return (
-    <div className="section" style={{ paddingBottom: "50px" }}>
+    <div className="section">
       <div className="section_wrap">
         <div className="section_title">
           <h2 className="title">

@@ -31,20 +31,9 @@ body {
   // min-width: 1280px;
   background-color: #fff;
   @media screen and (max-width: 767px) {
+    padding-top: 40px;
     max-width: 412px;
     margin: 0 auto;
-  }
-
-  &.isTopBanner {
-    padding-top: 122px;
-
-    @media screen and (max-width: 767px) {
-      padding-top: 40px;
-    }
-
-    #header {
-      padding-top: 40px;
-    }
   }
 }
 
@@ -68,5 +57,6 @@ body {
   @media screen and (max-width: 767px) {
     padding: 0 8px;
     margin: 0 auto;
+    border-bottom: none;
   }
 }

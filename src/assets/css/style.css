@@ -162,13 +162,29 @@ select {
   white-space: nowrap;
 }
 
+body {
+  overflow-y: scroll;
+}
+@media screen and (min-width: 768px) {
+  body {
+    min-width: 1440px;
+  }
+}
+.section {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
 #page_container {
   padding-top: 82px;
-  min-width: 1280px;
   background-color: #fff;
 }
-#page_container .isTopBanner {
-  padding-top: 122px;
+@media screen and (max-width: 767px) {
+  #page_container {
+    max-width: 412px;
+    margin: 0 auto;
+  }
 }
 #page_container .isTopBanner #header {
   padding-top: 40px;
@@ -189,9 +205,18 @@ select {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
+@media screen and (max-width: 767px) {
+  #header {
+    padding: 0 8px;
+    margin: 0 auto;
+    border-bottom: none;
+  }
+}
 
-#header {
-  min-width: 1280px;
+@media screen and (min-width: 768px) {
+  #header {
+    min-width: 1280px;
+  }
 }
 #header #header_sub {
   float: left;
@@ -202,14 +227,30 @@ select {
   border: 0;
   position: relative;
   top: auto;
-  left: auto;
+}
+@media screen and (max-width: 767px) {
+  #header #header_sub {
+    max-width: 412px;
+    margin: 0 auto;
+  }
 }
 #header #header_sub #yonex_logo {
   float: left;
   padding: 18px 0;
 }
+@media screen and (max-width: 767px) {
+  #header #header_sub #yonex_logo {
+    padding: 8px 0 4px 0;
+  }
+}
 #header #header_sub #yonex_logo a {
   float: left;
+}
+@media screen and (max-width: 767px) {
+  #header #header_sub #yonex_logo a img {
+    width: 60%;
+    place-items: center;
+  }
 }
 #header #header_sub #top_1 {
   float: left;
@@ -421,12 +462,26 @@ select {
 #header #header_sub #top_1 .yonex_menu > li:hover .sub_menu {
   display: block;
 }
+#header #header_sub .yonex.search_mobile .yonex.menu.mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #header #header_sub .sub_header {
+    display: none;
+  }
+}
+
 /* 최상단 띠배너 */
 #page_container.isTopBanner {
   padding-top: 122px;
 }
 #page_container.isTopBanner #header {
   padding-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  #page_container.isTopBanner #header {
+    padding-top: 0px;
+  }
 }
 #page_container.isTopBanner #header .top_banner {
   position: absolute;
@@ -449,22 +504,55 @@ select {
 #page_container.isTopBanner #header .top_banner > a:hover {
   background-color: #4f4f4f;
 }
+@media screen and (max-width: 767px) {
+  #page_container.isTopBanner #header .top_banner {
+    display: none;
+  }
+}
 
 .wrap {
-  max-width: 100%;
   padding-top: 20px;
 }
-
-.list .swiper .swiper-slide {
-  width: auto !important;
+@media screen and (max-width: 767px) {
+  .wrap {
+    max-width: 412px;
+  }
 }
-
-.card {
+.wrap .md-list {
+  height: 339px;
+  max-width: 1020px;
+  margin: 0;
+  padding: 0 0 0 50px;
+}
+.wrap .md-list .md-card {
+  background-color: #ffffff;
+  width: 230px;
+  padding: 10px;
+}
+.wrap .md-list .md-card .item-price {
+  margin-bottom: 10px;
+}
+.wrap .md-list .md-card .item-color {
+  padding: 10px 0 20px;
+  border-top: 1px solid #d9d9d9;
+}
+.wrap .md-list .md-card .md-card-item img {
+  width: 100%;
+}
+.wrap .list .card {
   border: 1px solid black;
   padding: 20px;
   border-radius: 20px;
   width: 450px;
   height: 720px;
+}
+@media screen and (max-width: 767px) {
+  .wrap .list .card {
+    height: 400px;
+  }
+}
+.wrap .list .swiper .swiper-slide {
+  width: auto !important;
 }
 
 .section_wrap {
@@ -482,12 +570,11 @@ select {
 }
 .section_wrap > .section_title .title {
   font-family: "Roboto";
-  display: inline-block;
   font-size: 37px;
   font-weight: 600;
   line-height: 44px;
 }
-.section_wrap > .section_title > .divider {
+.section_wrap > .section_title .divider {
   border: 2px solid #009739;
   position: relative;
   display: inline-block;
@@ -495,7 +582,7 @@ select {
   margin-top: 25px;
   margin-bottom: 10px;
 }
-.section_wrap > .section_title > .divider:after {
+.section_wrap > .section_title .divider:after {
   position: absolute;
   top: -8px;
   left: 0;
@@ -504,7 +591,7 @@ select {
   height: 1px;
   background: #0057b7;
 }
-.section_wrap > .section_title > .divider:before {
+.section_wrap > .section_title .divider:before {
   position: absolute;
   bottom: -8px;
   right: 0;
@@ -512,4 +599,40 @@ select {
   width: 50px;
   height: 1px;
   background: #0057b7;
+}
+.section_wrap > .section_title > .title__sub {
+  margin-top: 15px;
+  font-size: 17px;
+  line-height: 25px;
+  color: #666;
+}
+.section_wrap > .banner-box {
+  display: inline-block;
+  width: 20%;
+  padding: 0 5px;
+  margin-bottom: 40px;
+}
+
+.md_pick {
+  background-color: #f5f7fb;
+  padding-bottom: 50px;
+}
+
+.horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.section-title .title {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.section-title span {
+  font-size: 30px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

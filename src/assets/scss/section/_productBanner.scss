@@ -1,7 +1,17 @@
 // main product banner
+.section {
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 12px;
+  }
+}
+
 .section_wrap {
   display: block;
-  width: 1240px;
+  @media screen and (min-width: 768px) {
+    width: 1240px;
+  }
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -61,5 +71,44 @@
     width: 20%;
     padding: 0 5px;
     margin-bottom: 40px;
+    img {
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    > .section_title {
+      margin: 24px 0 20px;
+
+      .title {
+        font-size: 20px;
+      }
+
+      .divider {
+        margin: 12px 0 6px;
+      }
+
+      > .title__sub {
+        margin-top: 8px;
+        font-size: 12px;
+      }
+    }
+
+    .banner-box {
+      width: 33.3%;
+      margin-bottom: 12px;
+      padding: 0 5px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .banner-box-korea {
+      display: none;
+    }
   }
 }
