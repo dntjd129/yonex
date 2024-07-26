@@ -19,7 +19,7 @@
     "swiper": "^11.1.5",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
-    "hompage": "https://dntjd129.github.io/yonex/"
+    "hompage": "https://dntjd129.github.io/yonex"
   },
   "scripts": {
     "start": "react-scripts start",
