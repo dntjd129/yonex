@@ -4,6 +4,7 @@ import Header from "../../components/header/Header";
 import SlideCard from "../../components/main/SlideCard";
 import ProductBanner from "../../components/main/ProductBanner";
 import MdPick from "../../components/main/MdPick";
+import Notice from "../../components/main/Notice";
 
 const Main = () => {
   return (
@@ -18,9 +19,9 @@ const Main = () => {
         {/* MD's Pick */}
         <MdPick />
         {/* 회원 전용 혜택 */}
-        <div></div>
+        <Notice />
         {/* 요넥스 소식 */}
-        <div></div>
+        <div></div>w\
         {/* SNS */}
         <div></div>
         {/* 바로가기 */}

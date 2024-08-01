@@ -15,11 +15,11 @@ const MdPickSlide = () => {
     longSwipesRatio: 0,
     resistance: true,
     resistanceRatio: 0,
-    slidesPerView: 1,
+    slidesPerView: 2,
     slidesPerGroup: 1,
-    spaceBetween: 0, // 슬라이드 간의 간격
+    spaceBetween: 15, // 슬라이드 간의 간격
     autoplay: {
-      delay: 3000,
+      delay: 2600,
       disableOnInteraction: false,
     },
   };

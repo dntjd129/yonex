@@ -2,11 +2,13 @@
 
 .section {
   &.md_pick {
+    display: flex;
+    justify-content: center;
     background-color: #f5f7fb;
     padding-bottom: 50px;
   }
 
-  &.horizontal {
+  .horizontal {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +24,7 @@
       text-align: center;
     }
     span {
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 600;
     }
   }

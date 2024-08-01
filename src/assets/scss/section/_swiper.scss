@@ -4,20 +4,21 @@
 
   // md-pick swiper
   .md-list {
-    height: 339px;
     max-width: 1020px;
     margin: 0 auto;
     padding: 0 0 0 50px;
     @media screen and (max-width: 767px) {
+      display: flex;
+
       height: auto;
       width: auto;
-      padding: 0 30px;
+      padding: 0 15px;
     }
 
     .md-card {
       background-color: #ffffff;
-      width: 300px;
       padding: 10px;
+
       @media screen and (max-width: 767px) {
         width: 100%;
       }

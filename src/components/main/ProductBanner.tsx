@@ -26,10 +26,12 @@ const ProductBanner = () => {
       <div className="section_wrap">
         {bannerImg.map((imgSrc, index) => (
           <div className="banner-box" key={index}>
-            <a href="#">
-              <img src={imgSrc} alt={bannerText[index]} />
-              <div>{/* <p>{bannerText[index]}</p> */}</div>
-            </a>
+            <div className="banner-item">
+              <a href="#">
+                <img src={imgSrc} alt={bannerText[index]} />
+                <div>{/* <p>{bannerText[index]}</p> */}</div>
+              </a>
+            </div>
           </div>
         ))}
         <div className="banner-box-korea">

@@ -541,14 +541,14 @@ body {
 }
 @media screen and (max-width: 767px) {
   .wrap .md-list {
+    display: flex;
     height: auto;
     width: auto;
-    padding: 0 30px;
+    padding: 0 15px;
   }
 }
 .wrap .md-list .md-card {
   background-color: #ffffff;
-  width: 300px;
   padding: 10px;
 }
 @media screen and (max-width: 767px) {
@@ -651,10 +651,17 @@ body {
   color: #666;
 }
 .section_wrap > .banner-box {
+  overflow: hidden;
   display: inline-block;
   width: 20%;
   padding: 0 5px;
   margin-bottom: 40px;
+}
+.section_wrap .banner-item {
+  transition: transform 0.3s ease;
+}
+.section_wrap .banner-box:hover .banner-item {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 767px) {
   .section_wrap {
@@ -683,8 +690,8 @@ body {
   .section_wrap .banner-box img {
     width: 100%;
   }
-  .section_wrap .banner-box-korea {
-    display: none;
+  .section_wrap .banner-box-korea img {
+    width: 100%;
   }
 }
 
