@@ -52,4 +52,3 @@ const MdPickSlide = () => {
 };
 
 export default MdPickSlide;
-s;
