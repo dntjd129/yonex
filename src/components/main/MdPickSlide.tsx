@@ -4,23 +4,25 @@ import "../../assets/scss/style.scss";
 import SwiperCore from "swiper";
 import { Autoplay } from "swiper/modules";
 import md_1 from "../../assets/img/md_pick/md_pick_1.png";
-import md_1_hover from "../../assets/img/md_pick/md_pick_1_hover.png";
 
 SwiperCore.use([Autoplay]);
 
 const MdPickSlide = () => {
   const swiper_option = {
-    loop: true, // 반복
-    longSwipes: true,
-    longSwipesRatio: 0,
-    resistance: true,
-    resistanceRatio: 0,
-    slidesPerView: 2,
+    loop: true,
+    slidesPerView: 4,
     slidesPerGroup: 1,
-    spaceBetween: 15, // 슬라이드 간의 간격
+    spaceBetween: 15,
     autoplay: {
       delay: 2600,
       disableOnInteraction: false,
+    },
+    breakpoints: {
+      "@0.75": {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 15,
+      },
     },
   };
 
@@ -50,3 +52,4 @@ const MdPickSlide = () => {
 };
 
 export default MdPickSlide;
+s;
