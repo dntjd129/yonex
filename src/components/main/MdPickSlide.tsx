@@ -10,19 +10,14 @@ SwiperCore.use([Autoplay]);
 const MdPickSlide = () => {
   const swiper_option = {
     loop: true,
-    slidesPerView: 4,
+    loopFillGroupWithBlank: true,
+    spaceBetween: 15, // 슬라이드 간격
+    slidesPerView: "auto",
     slidesPerGroup: 1,
-    spaceBetween: 15,
+    centeredSlides: true, // 양쪽 미리보기
     autoplay: {
       delay: 2600,
       disableOnInteraction: false,
-    },
-    breakpoints: {
-      "@0.75": {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 15,
-      },
     },
   };
 
@@ -38,7 +33,7 @@ const MdPickSlide = () => {
                     <img src={md_1} alt="" />
                   </a>
                 </div>
-                <div className="item-name">item-name</div>
+                w <div className="item-name">item-name</div>
                 <div className="price-info">권장 소비자가 대비</div>
                 <div className="item-price">item-price</div>
                 <div className="item-color">item-color</div>

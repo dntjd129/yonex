@@ -11,7 +11,7 @@ const SlideCard = () => {
     loop: true,
     loopFillGroupWithBlank: true,
     spaceBetween: 8, // 슬라이드 간격
-    slidesPerView: 1.5,
+    slidesPerView: "auto",
     slidesPerGroup: 1,
     centeredSlides: true, // 양쪽 미리보기
     autoplay: {

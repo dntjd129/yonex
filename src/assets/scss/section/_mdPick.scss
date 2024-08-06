@@ -4,8 +4,11 @@
   &.md_pick {
     display: flex;
     justify-content: center;
-    background-color: #f5f7fb;
     padding-bottom: 50px;
+  }
+
+  &.bg-grey {
+    background-color: #f5f7fb;
   }
 
   .horizontal {
@@ -13,6 +16,10 @@
     align-items: center;
     justify-content: center;
     padding: 50px 0;
+    @media screen and (max-width: 767px) {
+      display: block;
+      text-align: center;
+    }
     > .divider {
       @media screen and (min-width: 768px) {
         display: none;
